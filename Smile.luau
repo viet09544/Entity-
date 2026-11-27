@@ -9,7 +9,7 @@ local TweenService = game:GetService("TweenService")
 local entity = Spawner:Create({
 	Entity = {
 		Name = "Smile",
-		Asset = "rbxassetid://108764900572976",
+		Asset = "rbxassetid://17071491370",
 		HeightOffset = 0
 	},
 	Lights = {
