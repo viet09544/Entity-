@@ -113,11 +113,11 @@ entity:SetCallback("OnDespawned", function()
     removeScarySky()
 end)
 
----====== Run entity trong vòng lặp (Thời gian chờ: 35 giây) ======---
+---====== Run entity trong vòng lặp (Thời gian chờ: 85 giây) ======---
 
 task.spawn(function()
     while true do
-        task.wait(35)
+        task.wait(85)
         entity:Run(true)
     end
 end)
