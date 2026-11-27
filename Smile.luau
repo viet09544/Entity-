@@ -29,7 +29,7 @@ local entity = Spawner:Create({
 		Values = {5, 25, 0.2, 3.2} -- Magnitude, Roughness, FadeIn, FadeOut
 	},
 	Movement = {
-		Speed = 105,
+		Speed = 100,
 		Delay = 2,
 		Reversed = false
 	},
@@ -38,7 +38,7 @@ local entity = Spawner:Create({
 		Type = "Ambush",
 		Min = 4,
 		Max = 7,
-		Delay = 1.7
+		Delay = 1.9
 	},
 	Damage = {
 		Enabled = true,
@@ -90,11 +90,11 @@ entity:SetCallback("OnDespawned", function()
     end)
 end)
 
----====== Run entity trong vòng lặp (Thời gian chờ: 20 giây) ======---
+---====== Run entity trong vòng lặp (Thời gian chờ: 60 giây) ======---
 
 task.spawn(function()
     while true do
-        task.wait(20)
+        task.wait(60)
         entity:Run(true)
     end
 end)
